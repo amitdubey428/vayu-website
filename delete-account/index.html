@@ -1,30 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="robots" content="noindex, nofollow">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Delete Your Vayu Account</title>
+    <meta name="description" content="Request permanent deletion of your Vayu Travels account and personal data">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" href="../assets/favicon.ico">
 </head>
 <body>
+    <!-- Navbar -->
     <nav>
-        <div class="container">
-            <img src="../assets/logo.png" alt="Vayu Logo" height="30">
-            <a href="../">← Back to Home</a>
+        <div class="container nav-container">
+            <img src="../assets/logo.png" alt="Vayu Logo" height="40">
+            <a href="../" class="back-button">
+                <i class="fas fa-arrow-left"></i> Back to Home
+            </a>
         </div>
     </nav>
 
-    <section class="container" style="text-align: center; padding: 3rem 0;">
-        <h1>Delete Your Account</h1>
-        <div style="max-width: 600px; margin: 0 auto; background: #f9f9f9; padding: 2rem; border-radius: 8px;">
-            <p>To permanently delete your Vayu account and data:</p>
-            <ol style="text-align: left; margin-left: 2rem;">
-                <li><strong>Open the Vayu app</strong> → Profile → Delete Account.</li>
-                <li><strong>Or email us</strong> at <a href="mailto:dubeyamit.1920@gmail.com">privacy@vayutravels.com</a> with your request.</li>
-            </ol>
-            <p><a href="vayuapp://profile/delete" style="color: #0066cc;">Click here to open the app directly</a> (if installed).</p>
+    <!-- Main Content -->
+    <section class="delete-account-section">
+        <div class="container">
+            <div class="delete-account-card">
+                <h1><i class="fas fa-user-slash"></i> Delete Your Account</h1>
+                <p class="warning-message">
+                    <i class="fas fa-exclamation-triangle"></i>
+                    This action is permanent and cannot be undone. All your trip data, preferences, and account information will be permanently removed.
+                </p>
+                
+                <div class="deletion-methods">
+                    <h2>How to delete your account:</h2>
+                    
+                    <div class="method-card">
+                        <div class="method-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <div class="method-content">
+                            <h3>Through the App</h3>
+                            <ol>
+                                <li>Open the Vayu app on your device</li>
+                                <li>Go to your Profile settings</li>
+                                <li>Select "Delete Account"</li>
+                                <li>Confirm your decision</li>
+                            </ol>
+                            <a href="vayuapp://profile/delete" class="app-link-button">
+                                <i class="fas fa-external-link-alt"></i> Open in Vayu App
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="method-card">
+                        <div class="method-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="method-content">
+                            <h3>Via Email Request</h3>
+                            <p>Send an email to our privacy team from your registered email address with the subject "Account Deletion Request".</p>
+                            <a href="mailto:privacy@vayutravels.com" class="email-button">
+                                <i class="fas fa-paper-plane"></i> Email privacy@vayutravels.com
+                            </a>
+                            <p class="note">Processing may take up to 7 business days.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="data-info">
+                    <h3><i class="fas fa-database"></i> What happens to your data?</h3>
+                    <ul>
+                        <li>All personal information is permanently deleted from our active databases</li>
+                        <li>Trip data and shared content will be anonymized</li>
+                        <li>Some data may remain in backups for up to 30 days before permanent deletion</li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-bottom">
+                <p>© 2025 Vayu Travels. All rights reserved.</p>
+                <a href="/privacy">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

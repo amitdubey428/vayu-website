@@ -318,6 +318,155 @@ footer {
   border-top: 1px solid #4a5568;
 }
 
+/* Delete Account Page Styles */
+.delete-account-section {
+    padding: 4rem 0;
+    min-height: 70vh;
+}
+
+.delete-account-card {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    border: 1px solid #e2e8f0;
+}
+
+.delete-account-card h1 {
+    color: #dc3545;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.warning-message {
+    background-color: #fff8f8;
+    border-left: 4px solid #dc3545;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    color: #dc3545;
+}
+
+.deletion-methods {
+    margin: 2.5rem 0;
+}
+
+.deletion-methods h2 {
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.method-card {
+    display: flex;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+    background-color: #f8f9fa;
+    border: 1px solid #e2e8f0;
+}
+
+.method-icon {
+    font-size: 1.75rem;
+    color: #0066cc;
+    margin-top: 0.25rem;
+}
+
+.method-content h3 {
+    margin-bottom: 1rem;
+    color: #2d3748;
+}
+
+.method-content ol {
+    padding-left: 1.25rem;
+    margin-bottom: 1.25rem;
+}
+
+.method-content ol li {
+    margin-bottom: 0.5rem;
+}
+
+.app-link-button, .email-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.25rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.2s;
+}
+
+.app-link-button {
+    background-color: #0066cc;
+    color: white;
+}
+
+.app-link-button:hover {
+    background-color: #0052a3;
+    transform: translateY(-2px);
+}
+
+.email-button {
+    background-color: #f8f9fa;
+    color: #2d3748;
+    border: 1px solid #d1d5db;
+}
+
+.email-button:hover {
+    background-color: #e5e7eb;
+}
+
+.note {
+    font-size: 0.875rem;
+    color: #6b7280;
+    margin-top: 0.5rem;
+}
+
+.data-info {
+    background-color: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-top: 2rem;
+}
+
+.data-info h3 {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    color: #2d3748;
+}
+
+.data-info ul {
+    padding-left: 1.25rem;
+}
+
+.data-info li {
+    margin-bottom: 0.5rem;
+}
+
+.back-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    color: #0066cc;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.back-button:hover {
+    color: #004080;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .hero {
@@ -341,5 +490,14 @@ footer {
   
   .section-title h2 {
     font-size: 2rem;
+  }
+
+  .delete-account-card {
+        padding: 1.5rem;
+  }
+    
+  .method-card {
+      flex-direction: column;
+      gap: 1rem;
   }
 }
