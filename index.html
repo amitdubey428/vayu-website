@@ -3,19 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vayu Travels - Plan Your Perfect Trip</title>
+    <title>Vayu - Your Ultimate Travel Companion</title>
+    <meta name="description" content="Plan, share, and explore with your group effortlessly. Vayu is the all-in-one travel app for seamless trip experiences.">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="icon" href="assets/favicon.ico">
 </head>
 <body>
     <!-- Navbar -->
     <nav>
-        <div class="container">
-            <img src="assets/logo.png" alt="Vayu Logo" height="40">
+        <div class="container nav-container">
+            <img src="assets/Vayu.svg" alt="Vayu Logo" height="40">
             <div class="nav-links">
                 <a href="#features">Features</a>
-                <a href="#how-it-works">How It Works</a>
+                <a href="#personas">Who's It For</a>
+                <a href="#testimonials">Testimonials</a>
                 <a href="/delete-account">Delete Account</a>
+                <a href="https://play.google.com/store/apps/details?id=com.vayu.travels" class="cta-button">Download</a>
             </div>
         </div>
     </nav>
@@ -24,38 +31,175 @@
     <section class="hero">
         <div class="container">
             <div class="hero-text">
-                <h1>Travel Smarter with Vayu</h1>
-                <p>Plan, share, and explore with your group effortlessly.</p>
-                <a href="https://play.google.com/store/apps/details?id=com.vayu.travels" class="cta-button">Download Now</a>
+                <h1>Travel Smarter, Together with Vayu</h1>
+                <p>The all-in-one travel app that makes group trips effortless. Plan, share, and explore with your friends and family like never before.</p>
+                <div class="hero-buttons">
+                    <a href="https://play.google.com/store/apps/details?id=com.vayu.travels" class="cta-button">
+                        <i class="fab fa-google-play"></i> Download on Play Store
+                    </a>
+                    <a href="#" class="cta-button secondary" style="margin-left: 1rem; background: var(--secondary);">
+                        <i class="fab fa-apple"></i> Coming to App Store
+                    </a>
+                </div>
             </div>
-            <img src="assets/app-screenshot.png" alt="Vayu App Preview">
+            <!-- <div class="hero-image">
+                <img src="assets/app-screenshot.png" alt="Vayu App Preview">
+            </div> -->
         </div>
     </section>
 
-    <!-- Features Section (Based on your PDF) -->
+    <!-- Features Section -->
     <section id="features" class="features">
         <div class="container">
-            <h2>Key Features</h2>
+            <div class="section-title">
+                <h2>Everything You Need for Perfect Trips</h2>
+                <p>Vayu combines all the essential tools for seamless group travel in one beautiful app</p>
+            </div>
             <div class="feature-grid">
                 <div class="feature-card">
-                    <h3>Real-Time Location Sharing</h3>
-                    <p>Track your group’s movements during the trip.</p>
+                    <div class="feature-icon">
+                        <i class="fas fa-route"></i>
+                    </div>
+                    <h3>Trip Planning</h3>
+                    <p>Collaboratively plan your itinerary with your group, choosing destinations, dates, and activities together.</p>
                 </div>
                 <div class="feature-card">
-                    <h3>Expense Splitting</h3>
-                    <p>Split costs seamlessly with friends.</p>
+                    <div class="feature-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Real-time Location Sharing</h3>
+                    <p>Never lose your group members with live location sharing and meetup suggestions.</p>
                 </div>
-                <!-- Add more features from your doc -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3>Group Chat</h3>
+                    <p>Built-in messaging keeps all trip communication in one place, accessible anytime.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h3>Itinerary Management</h3>
+                    <p>All your bookings in one place - flights, hotels, activities - with automatic reminders.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-route"></i>
+                    </div>
+                    <h3>Smart Route Planning</h3>
+                    <p>Get optimized routes with suggestions for interesting stops along your journey.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-money-bill-wave"></i>
+                    </div>
+                    <h3>Expense Splitting</h3>
+                    <p>Track shared costs and settle up effortlessly with automatic calculations.</p>
+                </div>
             </div>
+        </div>
+    </section>
+
+    <!-- User Personas Section -->
+    <section id="personas" class="personas">
+        <div class="container">
+            <div class="section-title">
+                <h2>Perfect for All Kinds of Travelers</h2>
+                <p>Vayu adapts to your travel style, whether you're exploring solo or with a group</p>
+            </div>
+            <div class="persona-grid">
+                <div class="persona-card">
+                    <img src="assets/students.jpg" alt="College students">
+                    <h3>Adventure Seekers</h3>
+                    <p>College friends backpacking through the Himalayas</p>
+                </div>
+                <div class="persona-card">
+                    <img src="assets/family.jpg" alt="Family">
+                    <h3>Families</h3>
+                    <p>Parents with kids on a cross-country road trip</p>
+                </div>
+                <div class="persona-card">
+                    <img src="assets/business.jpg" alt="Business travelers">
+                    <h3>Professionals</h3>
+                    <p>Business travelers attending conferences</p>
+                </div>
+                <div class="persona-card">
+                    <img src="assets/solo.jpg" alt="Solo traveler">
+                    <h3>Solo Explorers</h3>
+                    <p>Individuals discovering new cities alone</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-title">
+                <h2>What Travelers Say About Vayu</h2>
+                <p>Don't just take our word for it - hear from our users</p>
+            </div>
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Vayu completely transformed our group trip to Bali. The expense splitting alone saved us hours of arguments!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <!-- <img src="assets/user1.jpg" alt="Sarah K."> -->
+                        <div>
+                            <h4>Sarah K.</h4>
+                            <p>Group Trip Organizer</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"As a solo female traveler, the safety features give me peace of mind when exploring new places."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="assets/user2.jpg" alt="Priya M.">
+                        <div>
+                            <h4>Priya M.</h4>
+                            <p>Solo Traveler</p>
+                        </div>
+                    </div>
+                </div> -->
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Planning our family reunion trip was actually enjoyable thanks to Vayu's collaborative tools."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <!-- <img src="assets/user3.jpg" alt="Rajesh P."> -->
+                        <div>
+                            <h4>Rajesh P.</h4>
+                            <p>Family Traveler</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready for Stress-Free Group Travel?</h2>
+            <p>Join thousands of travelers who are already enjoying seamless trip experiences with Vayu</p>
+            <a href="https://play.google.com/store/apps/details?id=com.vayu.travels" class="cta-button">
+                <i class="fab fa-google-play"></i> Download Now
+            </a>
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
         <div class="container">
-            <p>© 2025 Vayu Travels. All rights reserved.</p>
-            <a href="/privacy">Privacy Policy</a>
-        </div>
-    </footer>
-</body>
-</html>
+            <div class="footer-container">
+                <div class="footer-links">
+                    <h3>Vayu</h3>
+                    <p>Your ultimate travel companion for group trips and solo adventures.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>
